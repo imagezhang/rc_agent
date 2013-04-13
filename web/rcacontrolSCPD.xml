@@ -1,0 +1,110 @@
+<?xml version="1.0"?>
+<scpd xmlns="urn:schemas-upnp-org:service-1-0">
+
+  <specVersion>
+    <major>1</major>
+    <minor>0</minor>
+  </specVersion>
+
+
+  <actionList>
+
+    <action>
+      <name>PowerOn</name>
+      <argumentList>
+         <argument>
+           <retval />
+           <name>Power</name>
+           <relatedStateVariable>Power</relatedStateVariable>
+           <direction>out</direction>
+          </argument>
+      </argumentList>
+    </action>
+
+    <action>
+      <name>PowerOff</name>    
+      <argumentList>
+         <argument>
+           <retval />
+           <name>Power</name>
+           <relatedStateVariable>Power</relatedStateVariable>
+           <direction>out</direction>
+          </argument>
+      </argumentList>
+    </action>
+
+    <action>
+      <name>SetModel</name>
+      <argumentList>
+
+        <argument>
+        <name>Model</name>
+          <relatedStateVariable>Model</relatedStateVariable>
+          <direction>in</direction>
+        </argument>
+
+        <argument>
+         <name>NewModel</name>
+         <retval />
+         <relatedStateVariable>Model</relatedStateVariable>
+         <direction>out</direction>
+        </argument>
+
+      </argumentList>
+    </action>
+
+    <action>
+      <name>SendModel</name>
+      <argumentList>
+
+        <argument>
+        <name>Key</name>
+          <relatedStateVariable>Key</relatedStateVariable>
+          <direction>in</direction>
+        </argument>
+
+        <argument>
+         <name>NewKey</name>
+         <retval />
+         <relatedStateVariable>Key</relatedStateVariable>
+         <direction>out</direction>
+        </argument>
+
+      </argumentList>
+    </action>
+
+  </actionList>
+
+  <serviceStateTable>
+
+    <stateVariable sendEvents="yes">
+      <name>Power</name>
+      <dataType>Boolean</dataType>
+      <defaultValue>0</defaultValue>
+    </stateVariable>
+
+    <stateVariable sendEvents="yes">
+      <name>Model</name>
+      <dataType>i4</dataType>
+        <allowedValueRange>
+          <minimum>1</minimum>
+          <maximum>100</maximum>
+          <step>1</step>
+        </allowedValueRange>
+      <defaultValue>1</defaultValue>
+    </stateVariable>
+
+    <stateVariable sendEvents="yes">
+      <name>Key</name>
+      <dataType>i4</dataType>
+        <allowedValueRange>
+          <minimum>0</minimum>
+          <maximum>100</maximum>
+          <step>1</step>
+        </allowedValueRange>
+      <defaultValue>5</defaultValue>
+    </stateVariable>
+
+  </serviceStateTable>
+
+</scpd>

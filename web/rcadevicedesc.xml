@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<root xmlns="urn:schemas-upnp-org:device-1-0">
+  <specVersion>
+    <major>1</major>
+    <minor>0</minor>
+  </specVersion>
+  <device>
+    <deviceType>urn:ubicomp.co:device:rcadevice:1</deviceType>
+    <friendlyName>UPnP Remote Control Agent Emulator</friendlyName>
+    <manufacturer>Ubiquitous Computing</manufacturer>
+    <manufacturerURL>http://www.manufacturer.com</manufacturerURL>
+    <modelDescription>UPnP Remote Control Agent Emulator 1.0</modelDescription>
+    <modelName>RcaEmulator</modelName>
+    <modelNumber>1.0</modelNumber>
+    <modelURL>http://www.manufacturer.com/RcaEmulator/</modelURL>
+    <serialNumber>RCA-000-00001</serialNumber>
+    <UDN>uuid:00000000-0102-0304-0506-0a0b0c0d0e0f</UDN>
+    <UPC>000000000001</UPC>
+    <serviceList>
+      <service>
+        <serviceType>urn:ubicomp.co:service:rcacontrol:1</serviceType>
+        <serviceId>urn:ubicomp.co:serviceId:rcacontrol1</serviceId>
+        <controlURL>/upnp/control/rcacontrol1</controlURL>
+        <eventSubURL>/upnp/event/rcacontrol1</eventSubURL>
+        <SCPDURL>/rcacontrolSCPD.xml</SCPDURL>
+      </service>
+    </serviceList>
+   <presentationURL>/rcadevicepres.html</presentationURL>
+</device>
+</root>

@@ -1,0 +1,8 @@
+This is a sample application derived from libupnp sample code.
+
+The original sample compilation seems too complex. This one use a simplified 
+Make file and should be easy to understand and modify.
+
+In case of testing, probably we do not want to install libupnp directly to the
+system. Before running the application, you should source setup.sh to setup
+the LD_LIBRARY_PATH to include the shared libraries required.
