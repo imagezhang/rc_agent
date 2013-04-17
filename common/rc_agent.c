@@ -29,7 +29,7 @@
 
 //============================================================================
 const char *RcaServiceType[] = {
-	"urn:ubicomp.co:service:rcacontrol:1",
+	"urn:ubicomp.com.au:service:rcacontrol:1",
 };
 
 const char *rcaCtrlVarName[] = { "Power", "Model", "Key" };

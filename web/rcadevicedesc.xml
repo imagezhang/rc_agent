@@ -5,7 +5,7 @@
     <minor>0</minor>
   </specVersion>
   <device>
-    <deviceType>urn:ubicomp.co:device:rcadevice:1</deviceType>
+    <deviceType>urn:ubicomp.com.au:device:rcadevice:1</deviceType>
     <friendlyName>UPnP Remote Control Agent Emulator</friendlyName>
     <manufacturer>Ubiquitous Computing</manufacturer>
     <manufacturerURL>http://www.manufacturer.com</manufacturerURL>
@@ -18,8 +18,8 @@
     <UPC>000000000001</UPC>
     <serviceList>
       <service>
-        <serviceType>urn:ubicomp.co:service:rcacontrol:1</serviceType>
-        <serviceId>urn:ubicomp.co:serviceId:rcacontrol1</serviceId>
+        <serviceType>urn:ubicomp.com.au:service:rcacontrol:1</serviceType>
+        <serviceId>urn:ubicomp.com.au:serviceId:rcacontrol1</serviceId>
         <controlURL>/upnp/control/rcacontrol1</controlURL>
         <eventSubURL>/upnp/event/rcacontrol1</eventSubURL>
         <SCPDURL>/rcacontrolSCPD.xml</SCPDURL>

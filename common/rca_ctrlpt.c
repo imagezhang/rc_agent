@@ -29,8 +29,8 @@ ithread_mutex_t DeviceListMutex;
 
 UpnpClient_Handle ctrlptHandle = -1;
 
-const char *rcaDeviceType = "urn:ubicomp.co:device:rcadevice:1";
-const char *rcaServiceType[] = {"urn:ubicomp.co:service:rcacontrol:1"};
+const char *rcaDeviceType = "urn:ubicomp.com.au:device:rcadevice:1";
+const char *rcaServiceType[] = {"urn:ubicomp.com.au:service:rcacontrol:1"};
 const char *rcaServiceName[] = {"Control"};
 const char *rcaVarName[RCA_SERVICE_SERVCOUNT][RCA_MAXVARS] = {
 	{"Power", "Model", "Key"}
@@ -38,7 +38,7 @@ const char *rcaVarName[RCA_SERVICE_SERVCOUNT][RCA_MAXVARS] = {
 
 char rcaVarCount[RCA_SERVICE_SERVCOUNT] = {RCA_CONTROL_VARCOUNT};
 
-const char *upnpServiceType[] = {"urn:ubicomp.co:service:rcacontrol:1"};
+const char *upnpServiceType[] = {"urn:ubicomp.com.au:service:rcacontrol:1"};
 const char *upnpServiceName[] = {"Control"};
 char upnpVarCount[UPNP_SERVICE_SERVCOUNT] = {UPNP_CONTROL_VARCOUNT};
 const char *upnpVarName[UPNP_SERVICE_SERVCOUNT][UPNP_MAXVARS] = {
